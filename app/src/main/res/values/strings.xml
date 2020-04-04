@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Covid-19 Info</string>
+    <string name="welcome">Welcome to Covid-19 Live data App</string>
+    <string name="country">Random country</string>
+    <string name="all_countries">All Countries</string>
+    <string name="click_to_get_random_country">Click to get random country</string>
+    <string name="here_you_will_find_the_data_about_covid_19_all_around_the_planet">Here you will find the data about Covid-19 all around the planet</string>
+    <string name="action_settings">setting</string>
+    <string name="check_your_internet_connection">Check your internet connection</string>
+    <string name="title">search</string>
+</resources>

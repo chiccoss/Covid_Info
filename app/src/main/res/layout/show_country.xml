@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".View.ViewCountry">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/Flag"
+            android:layout_width="313dp"
+            android:layout_height="194dp"
+            app:layout_constraintBottom_toTopOf="@+id/NameOfViewCountry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/NameOfViewCountry"
+            android:layout_width="236dp"
+            android:layout_height="63dp"
+            android:textColor="#000000"
+android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Flag" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="288dp"
+            android:layout_height="1404dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameOfViewCountry">
+
+
+            <TextView
+                android:id="@+id/Total_Cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Cases"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/BTN1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                android:clickable="false"
+                android:textSize="40sp"
+                app:layout_constraintTop_toBottomOf="@+id/Total_Cases"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/Today_Cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today Cases"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN2"
+                app:layout_constraintTop_toBottomOf="@+id/BTN1"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/BTN2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Total_deaths"
+                app:layout_constraintTop_toBottomOf="@+id/Today_Cases"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/Total_deaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total deaths"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN3"
+                app:layout_constraintTop_toBottomOf="@+id/BTN2"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/BTN3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Today_deaths"
+                app:layout_constraintTop_toBottomOf="@+id/Total_deaths"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/Today_deaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today Deaths"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN4"
+                app:layout_constraintTop_toBottomOf="@+id/BTN3"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/BTN4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Recovered"
+                app:layout_constraintTop_toBottomOf="@+id/Today_deaths"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/Recovered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recovered"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN5"
+                app:layout_constraintTop_toBottomOf="@+id/BTN4"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/BTN5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Active_cases"
+                app:layout_constraintTop_toBottomOf="@+id/Recovered"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/Active_cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active Cases"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN6"
+                app:layout_constraintTop_toBottomOf="@+id/BTN5"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/BTN6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Critical_cases"
+                app:layout_constraintTop_toBottomOf="@+id/Active_cases"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/Critical_cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Critical Cases"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN7"
+                app:layout_constraintTop_toBottomOf="@+id/BTN6"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/BTN7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Cases_Per_One_Milion"
+                app:layout_constraintTop_toBottomOf="@+id/Critical_cases"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/Cases_Per_One_Milion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cases Per One Milion"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN8"
+                app:layout_constraintTop_toBottomOf="@+id/BTN7"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/BTN8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/Deaths_Per_One_Milion"
+                app:layout_constraintTop_toBottomOf="@+id/Cases_Per_One_Milion"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/Deaths_Per_One_Milion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deaths Per One Milion"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN9"
+                app:layout_constraintTop_toBottomOf="@+id/BTN8"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/BTN9"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:clickable="false"
+
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Deaths_Per_One_Milion"
+                tools:layout_editor_absoluteX="-16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
