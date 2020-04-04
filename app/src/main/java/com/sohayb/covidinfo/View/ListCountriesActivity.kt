@@ -41,7 +41,7 @@ val webService : RetroFit = RetroFit()
         initCharactersRecyclerViewWithAll(list)
 
         resfreshLayout.setOnRefreshListener {
-            initCharactersRecyclerViewWithAll(list)
+            getAllCaractersAndFillRecycler()
         }
 
 
